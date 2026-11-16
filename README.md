@@ -2,9 +2,9 @@
 
 **English** | [فارسی](README.fa.md)
 
-A Python tool that collects exchange-rate posts from a Telegram channel, stores every post safely in a database, and turns them into clean, structured price data (buy and sell rates) that you can analyse or use inside another project.
+**A Telegram channel scraper for currency exchange rates, written in Python.** It scrapes exchange-rate posts from a Telegram channel with Telethon, stores every post safely in a SQLite database, and parses them into clean, structured price data (buy and sell rates) that you can analyse or use inside another project.
 
-It was built for the Herat currency market channel [`@NerkhYab_Khorasan`](https://t.me/NerkhYab_Khorasan) and tracks the US dollar (USD), the euro (EUR) and the Pakistani rupee (PKR, "kaldar") against the afghani (AFN). The collector works with any public Telegram channel; the price parser is written for this channel's format.
+It was built for the Herat (Afghanistan) currency market channel [`@NerkhYab_Khorasan`](https://t.me/NerkhYab_Khorasan) and tracks the US dollar (USD), the euro (EUR) and the Pakistani rupee (PKR, "kaldar") against the afghani (AFN). The collector works with any public Telegram channel; the price parser is written for this channel's format.
 
 > **Status:** version 0.1.0, early but working. History download and parsing have been verified on real data (3,539 posts gave 1,861 price rows with no failures). Live mode and long unattended runs have had limited real-world testing so far. See [Limitations](#limitations).
 
