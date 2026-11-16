@@ -5,6 +5,19 @@ description = "Collects exchange-rate posts from Herat market Telegram channels 
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.10"
+keywords = [
+    "telegram", "scraper", "telegram-scraper", "telethon", "exchange-rates",
+    "currency", "afghanistan", "herat", "afghani", "AFN", "sqlite",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Internet",
+    "Natural Language :: English",
+    "Natural Language :: Persian",
+]
 dependencies = [
     "telethon>=1.36",            # Telegram client (logs in as a user account)
     "sqlalchemy>=2.0",           # database layer (SQLite now, Postgres later)
@@ -16,6 +29,11 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
+
+[project.urls]
+Homepage = "https://github.com/omrtyyb/herat-nerkhbot"
+Documentation = "https://github.com/omrtyyb/herat-nerkhbot#readme"
+Issues = "https://github.com/omrtyyb/herat-nerkhbot/issues"
 
 [project.scripts]
 nerkhbot = "nerkhbot.cli:main"
